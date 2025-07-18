@@ -1,0 +1,77 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px -2px black;
+    height: 70px;
+}
+.nav-menu  {
+   
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+    color: #626262;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.nav-menu li{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 3px;
+cursor: pointer;
+
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo p{
+    color: #171717;
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 28px;
+}
+.nav-menu hr{
+    border: none;
+    width: 35px;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+
+
+}
+.nav-login-cart button{
+    width: 81px;
+    height: 42px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 15px;
+    color: #515151;
+    
+}
+.nav-login-cart button:active{
+    background-color: #f3f3f3;
+}
+.nav-cart-count{
+    height: 22px;
+    width: 22px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    color: black;
+    margin-top: -45px;
+    margin-left: -46px;
+}
