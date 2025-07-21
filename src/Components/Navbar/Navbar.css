@@ -62,6 +62,7 @@ cursor: pointer;
 }
 .nav-login-cart button:active{
     background-color: #f3f3f3;
+    
 }
 .nav-cart-count{
     height: 22px;

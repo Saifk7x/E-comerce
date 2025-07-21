@@ -20,9 +20,9 @@ export default function Navbar() {
            <Link to="/kids"> <li onClick={()=>{setMenu("Kids")}}>Kids{menu==="Kids"?<hr/>:<></>} </li></Link>
         </ul>
     <div className='nav-login-cart'>
-      <img src={cart_icon} height={40} alt=''/> 
+     <Link to="/cart"> <img src={cart_icon} height={40} alt=''/> </Link>
       <div className="nav-cart-count">0</div>
-        <button>Login</button>   
+      <Link to="/login"> <button>Login</button> </Link>  
         
         
         
