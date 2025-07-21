@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Navbar.css"
 import logo from "../../assets/logo.webp"
 import cart_icon from "../../assets/cart_icon.png"
+import { Link} from 'react-router-dom'
 
 
 export default function Navbar() {
@@ -13,10 +14,10 @@ export default function Navbar() {
             <p>Shopify</p>
         </div>
         <ul className="nav-menu">
-            <li onClick={()=>{setMenu("Home")}}>Home {menu==="Home"?<hr />:<></>}</li>
-            <li onClick={()=>{setMenu("Men")}}>Men{menu==="Men"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("Women")}}>Women{menu==="Women"?<hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("Kids")}}>Kids{menu==="Kids"?<hr/>:<></>} </li>
+           <Link to="/"> <li onClick={()=>{setMenu("Home")}}> Home {menu==="Home"?<hr />:<></>}</li></Link>
+           <Link to="/men">  <li onClick={()=>{setMenu("Men")}}>Men{menu==="Men"?<hr/>:<></>}</li></Link>
+           <Link to="/women"> <li onClick={()=>{setMenu("Women")}}>Women{menu==="Women"?<hr/>:<></>}</li></Link>
+           <Link to="/kids"> <li onClick={()=>{setMenu("Kids")}}>Kids{menu==="Kids"?<hr/>:<></>} </li></Link>
         </ul>
     <div className='nav-login-cart'>
       <img src={cart_icon} height={40} alt=''/> 
